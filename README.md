@@ -1,23 +1,20 @@
-Welcome to the sample GitHub ReadME! Use this template as an outline for your data analytics projects. Include one ReadME per repository, with each repository storing one project. Remember, it's better to have quality over quantity - having 2 stellar business-relevant projects stands out much more than 3+ mediocre projects. Feel free to make a copy of this or fork this repository and make it your own. Happy portfolio-ing :) 
+# Workflow Operations Optimization Analysis
 
+## Project Background
 
+This project analyzes an enterprise workflow operations dataset containing transactional logs across multiple core corporate departments, task types, urgency layers, and resource allocations. The objective was to develop an end-to-end data pipeline and analytical framework that enables stakeholders to monitor Service Level Agreement (SLA) compliance, pinpoint operational bottlenecks, and identify opportunities for resource optimization.
 
+Using Excel for initial data hygiene, PostgreSQL for deep-dive aggregation, and Tableau for data visualization, raw transactional logs were transformed into actionable operational intelligence. The analysis focuses on task-level efficiency, employee workload balance, departmental throughput, and the financial impact of operational delays.
 
-# Project Background
-Backround about the company, including the industry, active years, business model, and key business metrics. Explain this from the POV of a data analyst who is working at the company.
+Insights and recommendations are provided across the following key areas:
 
-Insights and recommendations are provided on the following key areas:
+* **SLA Compliance & Bottleneck Analysis:** Evaluation of delayed tasks to identify which specific task types and approval levels cause the highest frequency of baseline target breaches.
+* **Resource Capacity & Workload Balance:** Assessment of how increasing employee task volumes impacts true processing speed, establishing the threshold for peak operational efficiency before performance degrades.
+* **Cost-to-Serve Optimization:** Financial tracking of cumulative operational costs by department to identify high-expense workflows and drive process-streamlining strategies.
 
-- **Category 1:** 
-- **Category 2:** 
-- **Category 3:** 
-- **Category 4:** 
+An interactive Tableau dashboard used to report and explore these operational metrics can be found [here](#).
 
-The SQL queries used to inspect and clean the data for this analysis can be found here [link].
-
-Targed SQL queries regarding various business questions can be found here [link].
-
-An interactive Tableau dashboard used to report and explore sales trends can be found here [link].
+The complete SQL script containing the queries used for data aggregation, view creations, and answering key business performance metrics can be found [here](#).
 
 
 
