@@ -14,7 +14,7 @@ Insights and recommendations are provided across the following key areas:
 
 An interactive Tableau dashboard used to report and explore these operational metrics can be found [here](#).
 
-The complete SQL script containing the queries used for data aggregation, view creations, and answering key business performance metrics can be found [here](./SQL/Workflow-Operations-Data-Analyst-Project.sql).
+The complete SQL script containing the queries used for data aggregation, view creations, and answering key business performance metrics can be found [here](./SQL/queries.sql).
 
 
 
