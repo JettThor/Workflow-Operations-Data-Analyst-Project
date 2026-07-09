@@ -41,7 +41,11 @@ Explain the overarching findings, trends, and themes in 2-3 sentences here. This
 
 
 # Insights Deep Dive
-### Category 1:
+### Category 1: SLA Compliance & Bottleneck Analysis
+
+- Q1: SLA Compliance % (Executive KPI)
+- Q3: Top Delay-Causing Processes
+- Q5: Actual vs. Estimated Time Variance by Approval Level
 
 * **Main insight 1.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
   
@@ -54,7 +58,11 @@ Explain the overarching findings, trends, and themes in 2-3 sentences here. This
 [Visualization specific to category 1]
 
 
-### Category 2:
+### Category 2: Resource Capacity & Workload Balance
+
+- Q2: Monthly Task Volume / Monthly Delay % Trends
+- Q6: Priority Level Efficiency (Task throughput speed)
+- Q8: Employee Workload vs. Delay Risk Threshold
 
 * **Main insight 1.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
   
@@ -67,7 +75,11 @@ Explain the overarching findings, trends, and themes in 2-3 sentences here. This
 [Visualization specific to category 2]
 
 
-### Category 3:
+### Category 3: Cost-to-Serve Optimization
+
+- Q1: Total Operational Cost (Executive KPI)
+- Q4: Top High-Cost Departments
+- Q7: Average Cost Per Task
 
 * **Main insight 1.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
   
@@ -79,18 +91,6 @@ Explain the overarching findings, trends, and themes in 2-3 sentences here. This
 
 [Visualization specific to category 3]
 
-
-### Category 4:
-
-* **Main insight 1.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
-  
-* **Main insight 2.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
-  
-* **Main insight 3.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
-  
-* **Main insight 4.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
-
-[Visualization specific to category 4]
 
 
 
