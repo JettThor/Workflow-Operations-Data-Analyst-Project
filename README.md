@@ -12,7 +12,7 @@ Insights and recommendations are provided across the following key areas:
 * **Resource Capacity & Workload Balance:** Assessment of how increasing employee task volumes impacts true processing speed, establishing the threshold for peak operational efficiency before performance degrades.
 * **Cost-to-Serve Optimization:** Financial tracking of cumulative operational costs by department to identify high-expense workflows and drive process-streamlining strategies.
 
-An interactive Tableau dashboard used to report and explore these operational metrics can be found [here](#).
+An interactive Tableau dashboard used to report and explore these operational metrics can be found [here](YOUR_LINK_HERE).
 
 The complete SQL script containing the queries used for data aggregation, view creations, and answering key business performance metrics can be found [here](./SQL/queries.sql).
 
