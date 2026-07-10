@@ -30,10 +30,11 @@ The companies main database structure as seen below consists of four tables: Dep
 
 ### Overview of Findings
 
+<img width="2118" height="1162" alt="{20C1C1D9-07FC-4E99-8A90-F03323A9F994}" src="https://github.com/user-attachments/assets/500b1dd4-b1a3-45e4-8c97-76f04bc3faae" />
+
 * Systemic Underestimation and Delay Epidemic: An overwhelming 96.5% of all tasks are delayed, with processes taking an average of 48.7 minutes longer than anticipated. This points to a foundational flaw in how project baselines are estimated rather than isolated employee underperformance.
 * Critical Bottlenecks in HR & IT: The HR Onboarding and IT Support Ticket workflows are the primary drivers of operational drag, averaging 62.6 and 56.3 minutes of overtime per task respectively, making them the highest priority targets for process automation or restructuring.
 * Severe Friction in Critical-Priority Workflows: High-urgency tasks are failing to cut through the noise, with Critical priority assignments experiencing the worst delays of all, averaging 64.4 minutes of overtime. This directly compromises business agility and inflates the operational cost of time-sensitive tasks.
-[Visualization, including a graph of overall trends or snapshot of a dashboard]
 
 
 
