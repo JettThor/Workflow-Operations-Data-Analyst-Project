@@ -18,15 +18,11 @@ The complete SQL script containing the queries used for data aggregation, view c
 
 
 
-# START HERE Data Structure & Initial Checks
+# Data Structure & Initial Checks
 
-The companies main database structure as seen below consists of four tables: table1, table2, table3, table4, with a total row count of X records. A description of each table is as follows:
-- **Table 2:**
-- **Table 3:**
-- **Table 4:**
-- **Table 5:**
+The companies main database structure as seen below consists of four tables: Department, Processes, Employees, and Tasks with a total row count of X records. A description of each table is as follows:
 
-[Entity Relationship Diagram here]
+<img width="868" height="673" alt="{CC342971-1EC7-443D-859A-6DF1CB06AE6D}" src="https://github.com/user-attachments/assets/ef854cf8-734f-461a-adea-d742c8b41422" />
 
 
 
