@@ -39,6 +39,8 @@ The companies main database structure as seen below consists of four tables: Dep
 
 
 # Insights Deep Dive
+<img width="2115" height="1163" alt="{29214C86-032C-4AAA-B891-A71525D49DB9}" src="https://github.com/user-attachments/assets/148830a9-b8b6-4947-b19b-a5c53bf07bfe" />
+
 ### Category 1: SLA Compliance & Bottleneck Analysis
 
 * **Main Insight 1 (SLA Performance Crisis):** During the Q1 reporting period, the organization experienced a severe operational bottleneck, resulting in a critical **SLA Compliance rate of just 5.08%**. Out of 2,500 total tasks processed across all workflows, a staggering 2,373 tasks failed to meet their designated timelines, leaving only 127 tasks classified as on-time. This indicates a systemic failure to meet standard operational agreements rather than an isolated departmental issue.
@@ -48,25 +50,24 @@ The companies main database structure as seen below consists of four tables: Dep
 * **Main Insight 3 (Hierarchical Timeline Distortion):** The timeline distortion amplifies as tasks ascend the management hierarchy, revealing an organizational lag in sign-offs. While entry-level tasks face significant delays, **Level 1 approvals** experience an average time variance of **56.40 minutes** past their original estimate across 826 tasks. This variance steadily deteriorates at higher tiers, peaking at **Level 3 approvals** with an average delay of **57.66 minutes** across 853 tasks, showing that executive-level oversight introduces the highest degree of process friction.
 
 * **Main Insight 4 (Systemic Delay Distribution):** Volume distribution across approval layers indicates that the backlog is uniformly distributed, creating equalized friction across the entire business hierarchy. Levels 1, 2, and 3 all handle an almost identical volume of delayed work (ranging between 821 and 853 tasks each) while maintaining a tight, high-variance range of 56.4 to 57.7 minutes per task. This uniformity indicates that the timeline distortion is baked into the baseline operational architecture, requiring structural process re-engineering rather than targeted coaching at a single management tier.
-<img width="2115" height="1163" alt="{29214C86-032C-4AAA-B891-A71525D49DB9}" src="https://github.com/user-attachments/assets/148830a9-b8b6-4947-b19b-a5c53bf07bfe" />
+
 
 
 
 ### Category 2: Resource Capacity & Workload Balance
 
-- Q2: Monthly Task Volume / Monthly Delay % Trends
-- Q6: Priority Level Efficiency (Task throughput speed)
-- Q8: Employee Workload vs. Delay Risk Threshold
+<img width="2120" height="1163" alt="{49091013-0D6D-4120-9041-172290CA7E26}" src="https://github.com/user-attachments/assets/997bcec7-3956-4bee-9682-bf1208921cf3" />
 
-* **Main insight 1.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
-  
-* **Main insight 2.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
-  
-* **Main insight 3.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
-  
-* **Main insight 4.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
+* **Main Insight 1 (Volume-Insensitive Delay Flatline):** Time-series analysis reveals that the organization’s operational friction is completely decoupled from seasonal volume fluctuations. Throughout the 12-month cycle, monthly task volume fluctuated between a low of 183 tasks (April) and a peak of 235 tasks (March). Despite these changes in demand, the delay rate remained alarmingly flat and systemic, tightly constrained within a narrow margin between **92.89% and 96.62%** every single month. This proves the backlog is driven by structural workflow design rather than temporary spikes in business volume.
 
-[Visualization specific to category 2]
+* **Main Insight 2 (The Overload Capacity Paradox):** Aggregating employee performance into operational capacity tiers reveals a striking paradox: increasing an individual's workload does not degrade their relative performance. Employees classified under the **Medium workload band** (779 total tasks) carried the highest failure rate with a **95.25% delay rate**, while employees pushed into the **Overloaded band** (492 total tasks) actually demonstrated the lowest comparative friction with a **94.31% delay rate**. Because the delay rate stays hovering around 94%–95% across all bands (Low, Medium, High, Overloaded), it is clear that individual worker fatigue is not the root cause; the processes themselves are structurally broken.
+
+* **Main Insight 3 (Granular Resource Equalization):** Individual resource tracking across all 150 active employees further confirms that operational gridlock is fully institutionalized. The company's highest-capacity worker, **EMP_28** (handling the maximum load of 30 tasks), maintained a **90.00% delay rate**. Meanwhile, mid-tier workers like EMP_16, EMP_115, and EMP_25 (handling 23 tasks each) hit absolute failure floors with **100.00% delay rates**. The fact that no single employee out of 150 can achieve a healthy on-time delivery rate proves that personnel changes or individual talent re-allocation will not solve the crisis.
+
+* **Main Insight 4 (Microscopic Efficiency Margins):** A deep dive into individual task efficiency reveals that when a process manages to execute successfully, its positive margin is entirely negligible compared to the scale of the delays. Out of 2,500 total rows processed, the absolute best-performing records in the database (such as TASK_1665 and TASK_2037) only managed to beat their timeline estimates by a microscopic **5 minutes**. When contrasted against the global average delay baseline of roughly 54 to 58 minutes over-schedule, these minor "efficient" outliers fail to provide any meaningful operational offset.
+
+
+
 
 
 ### Category 3: Cost-to-Serve Optimization
@@ -75,6 +76,8 @@ The companies main database structure as seen below consists of four tables: Dep
 - Q4: Top High-Cost Departments
 - Q7: Average Cost Per Task
 
+[Visualization specific to category 3]
+
 * **Main insight 1.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
   
 * **Main insight 2.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
@@ -82,9 +85,6 @@ The companies main database structure as seen below consists of four tables: Dep
 * **Main insight 3.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
   
 * **Main insight 4.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
-
-[Visualization specific to category 3]
-
 
 
 
