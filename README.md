@@ -72,44 +72,33 @@ The companies main database structure as seen below consists of four tables: Dep
 
 ### Category 3: Cost-to-Serve Optimization
 
-- Q1: Total Operational Cost (Executive KPI)
-- Q4: Top High-Cost Departments
-- Q7: Average Cost Per Task
+<img width="2120" height="1161" alt="{B315EA26-3BF1-419C-B219-9B47FAD3233D}" src="https://github.com/user-attachments/assets/8eca82af-d5ea-4f17-a9a3-d896ee5e36e0" />
 
-[Visualization specific to category 3]
+* **Main Insight 1 (The Severe Performance-to-Cost Disconnect):** Financial aggregate analysis reveals a massive capital expenditure mismatch. The organization spent a total of **$694,941.77** across the 2,500 processed tasks. Despite this significant financial commitment, the SLA compliance rate sits at an abysmal **5.08%**, with only 127 tasks finishing on time out of the 2,500 total. This proves that high spending is completely failing to drive operational velocity or timely fulfillment.
 
-* **Main insight 1.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
-  
-* **Main insight 2.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
-  
-* **Main insight 3.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
-  
-* **Main insight 4.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
+* **Main Insight 2 (Homogenized Departmental Cost Allocation):** Operational cost structures are almost perfectly flat across the entire company, indicating systemic enterprise-wide cost inflation rather than a single bottleneck department. **Operations** demands the highest capital allocation at **$141,783.76**, tightly followed by **IT** ($140,654.50), **HR** ($139,109.55), and **Finance** ($138,633.01). Even the lowest-cost business unit, **Customer Service**, requires **$134,760.95**. The narrow $7,022 variance between the highest and lowest departments demonstrates that cost-to-serve friction is fully institutionalized.
+
+* **Main Insight 3 (Flat Unit Economics Across Task Categories):** Granular tracking of individual task types confirms that no matter the nature of the work, the cost baseline remains stubbornly high, averaging **$277.98 per task** globally. **Validation** tasks are the most expensive to execute, averaging **$285.44**, with **Review** ($282.72) and **Approval** ($281.41) close behind. Even the least complex task type, **Data Entry**, carries a substantial unit cost of **$268.86**, leaving no room for quick or cheap operational wins under the current system structure.
+
+* **Main Insight 4 (Premium Price for Friction):** Combining the macro operational metrics with unit costs reveals that the organization is effectively paying a premium rate for delays. Because every task type hovers between $268 and $285, and 94.92% of all tasks are delayed, the company is absorbing roughly **$277.98 in overhead per task** for a process that will almost certainly fail its delivery deadline. The lack of cost elasticity across departments or task types confirms that the financial model is completely decoupled from performance outcomes.
 
 
 
-# Recommendations:
+## Recommendations
 
-Based on the insights and findings above, we would recommend the [stakeholder team] to consider the following: 
+Based on the insights and findings above, we recommend the executive leadership and operational excellence teams consider the following tactical actions:
 
-* Specific observation that is related to a recommended action. **Recommendation or general guidance based on this observation.**
-  
-* Specific observation that is related to a recommended action. **Recommendation or general guidance based on this observation.**
-  
-* Specific observation that is related to a recommended action. **Recommendation or general guidance based on this observation.**
-  
-* Specific observation that is related to a recommended action. **Recommendation or general guidance based on this observation.**
-  
-* Specific observation that is related to a recommended action. **Recommendation or general guidance based on this observation.**
-  
+* **Implement SLA Triaging & Threshold Restructuring:** With a dismal **5.08% global SLA compliance rate**, the current performance windows are fundamentally unrealistic or deeply bottlenecked. **Recommendation:** Audit the baseline time requirements for complex task types like *Validation* and *Review*, and implement automated alerts when a task approaches **80%** of its allotted SLA window to prevent systemic delays.
+* **Standardize High-Volume Task Automation:** The organization is absorbing a massive **$268.86 unit cost for Data Entry tasks**, a process traditionally ripe for automation. **Recommendation:** Transition manual input pipelines into an Automated Document Processing (ADP) or Robotic Process Automation (RPA) workflow to slash unit economics by an estimated 40–50% and free up human bandwidth for high-priority bottlenecks.
+* **Target Bottlenecks in Highest-Spend Departments:** Capital expenditure is heavily concentrated in **Operations ($141,783.76)** and **IT ($140,654.50)**. **Recommendation:** Conduct a granular time-motion study specifically within these two business units to identify why their processing speeds do not match their high capital allocations.
+* **Introduce Performance-Linked Financial Guardrails:** Currently, unit costs remain completely flat (hovering around **$277.98 per task**) regardless of whether a task is delivered on time or delayed. **Recommendation:** Restructure vendor agreements or departmental resource allocation to introduce efficiency incentives, ensuring that premium cost-to-serve structures are only sustained for high-velocity outputs.
 
+---
 
-# Assumptions and Caveats:
+## Assumptions and Caveats
 
-Throughout the analysis, multiple assumptions were made to manage challenges with the data. These assumptions and caveats are noted below:
+Throughout the analysis, multiple assumptions were made to manage challenges with the dataset and establish clean definitions. These assumptions and caveats are noted below:
 
-* Assumption 1 (ex: missing country records were for customers based in the US, and were re-coded to be US citizens)
-  
-* Assumption 1 (ex: data for December 2021 was missing - this was imputed using a combination of historical trends and December 2020 data)
-  
-* Assumption 1 (ex: because 3% of the refund date column contained non-sensical dates, these were excluded from the analysis)
+* **Definition of SLA Breach:** It is assumed that any record flagged with `is_delayed = true` represents a clear breach of standard operating agreements, irrespective of the scale of the delay (e.g., a task delayed by 5 minutes is structurally evaluated the same as a task delayed by 5 days due to data constraints).
+* **Homogeneous Resource Expenses:** The `cost_per_task` calculation assumes flat resource usage across the lifecycle of a task type. In a live production environment, edge-case escalations would typically incur variable compounding costs, which are not captured in this aggregate view.
+* **Static Operational Scale:** The data evaluates a fixed subset of 2,500 processed tasks. The analysis assumes this sample size is a mathematically representative reflection of regular enterprise performance and free from extreme seasonal anomalies or hardware downtimes.
