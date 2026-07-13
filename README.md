@@ -41,19 +41,15 @@ The companies main database structure as seen below consists of four tables: Dep
 # Insights Deep Dive
 ### Category 1: SLA Compliance & Bottleneck Analysis
 
-- Q1: SLA Compliance % (Executive KPI)
-- Q3: Top Delay-Causing Processes
-- Q5: Actual vs. Estimated Time Variance by Approval Level
+* **Main Insight 1 (SLA Performance Crisis):** During the Q1 reporting period, the organization experienced a severe operational bottleneck, resulting in a critical **SLA Compliance rate of just 5.08%**. Out of 2,500 total tasks processed across all workflows, a staggering 2,373 tasks failed to meet their designated timelines, leaving only 127 tasks classified as on-time. This indicates a systemic failure to meet standard operational agreements rather than an isolated departmental issue.
 
-* **Main insight 1.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
-  
-* **Main insight 2.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
-  
-* **Main insight 3.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
-  
-* **Main insight 4.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
+* **Main Insight 2 (Process-Level Friction):** Bottleneck density analysis reveals that operational friction is heavily concentrated in downstream tracking and financial workflows. The single largest driver of administrative drag is the **Review stage of IT Support Tickets**, accounting for 109 delayed tasks (4.59% of all global delays). This is closely followed by **Purchase Order Escalations** at 107 delayed tasks (4.51%) and **Invoice Approval Reviews** at 105 delayed tasks (4.42%), proving that validation and review stages are consistently arresting workflow velocity.
 
-[Visualization specific to category 1]
+* **Main Insight 3 (Hierarchical Timeline Distortion):** The timeline distortion amplifies as tasks ascend the management hierarchy, revealing an organizational lag in sign-offs. While entry-level tasks face significant delays, **Level 1 approvals** experience an average time variance of **56.40 minutes** past their original estimate across 826 tasks. This variance steadily deteriorates at higher tiers, peaking at **Level 3 approvals** with an average delay of **57.66 minutes** across 853 tasks, showing that executive-level oversight introduces the highest degree of process friction.
+
+* **Main Insight 4 (Systemic Delay Distribution):** Volume distribution across approval layers indicates that the backlog is uniformly distributed, creating equalized friction across the entire business hierarchy. Levels 1, 2, and 3 all handle an almost identical volume of delayed work (ranging between 821 and 853 tasks each) while maintaining a tight, high-variance range of 56.4 to 57.7 minutes per task. This uniformity indicates that the timeline distortion is baked into the baseline operational architecture, requiring structural process re-engineering rather than targeted coaching at a single management tier.
+<img width="2115" height="1163" alt="{29214C86-032C-4AAA-B891-A71525D49DB9}" src="https://github.com/user-attachments/assets/148830a9-b8b6-4947-b19b-a5c53bf07bfe" />
+
 
 
 ### Category 2: Resource Capacity & Workload Balance
